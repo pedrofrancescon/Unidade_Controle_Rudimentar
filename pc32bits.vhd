@@ -29,16 +29,18 @@ architecture a_pc32bits of pc32bits is
 
     	reg: reg32bits port map( clk=>clk , rst=>rst , wr_en=>wr_en , data_in=>data_i , data_out=>data_o );
 
-    	process(clk,rst,wr_en)
-		begin
-			if rst='1' then
-				data_i <= "00000000000000000000000000000000";
-			elsif wr_en='1' then
-				if rising_edge(clk) then
-					data_i <= data_o + "00000000000000000000000000000001";
-				end if;
-			end if;
-		end process;
+    	data_i <= data_o + "00000000000000000000000000000001";
+
+  --  	process(clk,rst,wr_en)
+		--begin
+		--	if rst='1' then
+		--		data_i <= "00000000000000000000000000000000";
+		--	elsif wr_en='1' then
+		--		if rising_edge(clk) then
+					
+		--		end if;
+		--	end if;
+		--end process;
 
 		data_out <= data_o;
 

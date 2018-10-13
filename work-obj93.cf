@@ -1,7 +1,7 @@
 v 3
-file . "pc32bits_tb.vhd" "20181013155556.000" "20181013131028.936":
-  entity pc32bits_tb at 1( 0) + 0 on 35;
-  architecture a_pc32bits_tb of pc32bits_tb at 9( 106) + 0 on 36;
+file . "pc32bits_tb.vhd" "20181013155556.000" "20181013133314.269":
+  entity pc32bits_tb at 1( 0) + 0 on 39;
+  architecture a_pc32bits_tb of pc32bits_tb at 9( 106) + 0 on 40;
 file . "reg32bits.vhd" "20181013152858.000" "20181013125313.264":
   entity reg32bits at 1( 0) + 0 on 23;
   architecture a_reg32bits of reg32bits at 15( 261) + 0 on 24;
@@ -17,6 +17,6 @@ file . "rom128kb_tb.vhd" "20181011210105.000" "20181011180107.711":
 file . "flipflop_T_tb.vhd" "20181013150745.000" "20181013120749.653":
   entity flipflop_t_tb at 1( 0) + 0 on 21;
   architecture a_flipflop_t_tb of flipflop_t_tb at 8( 107) + 0 on 22;
-file . "pc32bits.vhd" "20181013161004.000" "20181013131015.438":
-  entity pc32bits at 1( 0) + 0 on 33;
-  architecture a_pc32bits of pc32bits at 14( 221) + 0 on 34;
+file . "pc32bits.vhd" "20181013163240.000" "20181013133302.734":
+  entity pc32bits at 1( 0) + 0 on 37;
+  architecture a_pc32bits of pc32bits at 14( 221) + 0 on 38;
