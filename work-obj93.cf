@@ -1,4 +1,10 @@
 v 3
+file . "pc_rom_tb.vhd" "20181013171141.000" "20181013141640.963":
+  entity pc_rom_tb at 1( 0) + 0 on 55;
+  architecture a_pc_rom_tb of pc_rom_tb at 9( 104) + 0 on 56;
+file . "pc15bits.vhd" "20181013171254.000" "20181013141256.225":
+  entity pc15bits at 1( 0) + 0 on 43;
+  architecture a_pc15bits of pc15bits at 14( 221) + 0 on 44;
 file . "pc32bits_tb.vhd" "20181013155556.000" "20181013133314.269":
   entity pc32bits_tb at 1( 0) + 0 on 39;
   architecture a_pc32bits_tb of pc32bits_tb at 9( 106) + 0 on 40;
@@ -8,9 +14,9 @@ file . "reg32bits.vhd" "20181013152858.000" "20181013125313.264":
 file . "flipflop_T.vhd" "20181013144851.000" "20181013115948.292":
   entity flipflop_t at 1( 0) + 0 on 15;
   architecture a_flipflop_t of flipflop_t at 14( 211) + 0 on 16;
-file . "rom128kb.vhd" "20181011205549.000" "20181011175950.488":
-  entity rom128kb at 1( 0) + 0 on 11;
-  architecture a_rom128kb of rom128kb at 12( 215) + 0 on 12;
+file . "rom128kb.vhd" "20181013171615.000" "20181013141624.852":
+  entity rom128kb at 1( 0) + 0 on 53;
+  architecture a_rom128kb of rom128kb at 12( 215) + 0 on 54;
 file . "rom128kb_tb.vhd" "20181011210105.000" "20181011180107.711":
   entity rom128kb_tb at 1( 0) + 0 on 13;
   architecture a_rom128kb_tb of rom128kb_tb at 8( 106) + 0 on 14;
@@ -20,3 +26,9 @@ file . "flipflop_T_tb.vhd" "20181013150745.000" "20181013120749.653":
 file . "pc32bits.vhd" "20181013163240.000" "20181013133302.734":
   entity pc32bits at 1( 0) + 0 on 37;
   architecture a_pc32bits of pc32bits at 14( 221) + 0 on 38;
+file . "reg15bits.vhd" "20181013165741.000" "20181013141215.035":
+  entity reg15bits at 1( 0) + 0 on 41;
+  architecture a_reg15bits of reg15bits at 15( 261) + 0 on 42;
+file . "pc_rom.vhd" "20181013171331.000" "20181013141358.630":
+  entity pc_rom at 1( 0) + 0 on 49;
+  architecture a_pc_rom of pc_rom at 14( 219) + 0 on 50;

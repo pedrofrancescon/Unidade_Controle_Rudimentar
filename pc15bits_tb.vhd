@@ -3,21 +3,21 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity pc32bits_tb is
+entity pc15bits_tb is
 end entity;
 
-architecture a_pc32bits_tb of pc32bits_tb is
+architecture a_pc15bits_tb of pc15bits_tb is
 	
-component pc32bits
-    port( clk: in std_logic;
-		  rst: in std_logic;
-		  wr_en: in std_logic;
-		  data_out: out unsigned(31 downto 0)
-	);
-    end component;
+	component pc15bits
+    	port( clk: in std_logic;
+		  	rst: in std_logic;
+		  	wr_en: in std_logic;
+		  	data_out: out unsigned(14 downto 0)
+		);
+   	end component;
 
     signal wr_en, rst, clk: std_logic;
-    signal data_out: unsigned(31 downto 0);
+    signal data_out: unsigned(14 downto 0);
 
     begin 
 
