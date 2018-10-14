@@ -20,18 +20,16 @@ architecture a_pc_controle_tb of pc_controle_tb is
     process
     begin
     clk <= '0';
-    wait for 50 ns;
+    wait for 5 ns;
     clk <= '1';
-    wait for 50 ns;
+    wait for 5 ns;
     end process;
-
     process
     begin
     rst <= '1';
-    wait for 10 ns;
+    wait for 50 ns;
     rst <= '0';
-    wait for 100 ns;
-
+    wait for 90 ns;
     wait;
     end process;
 

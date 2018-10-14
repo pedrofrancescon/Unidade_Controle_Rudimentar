@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 entity pc_rom is
 	port( clk: in std_logic;
 		  rst: in std_logic;
+		  jump: in std_logic;
 		  wr_en: in std_logic;
 		  data_in: in unsigned(14 downto 0); --endereço do jump
 		  data_out: out unsigned(31 downto 0)
@@ -41,7 +42,9 @@ architecture a_pc_rom of pc_rom is
 
     	pc: pc15bits port map ( clk => clk,
 		   						rst => rst,
+								jump_en => jump,
 								wr_en => wr_en,
+								data_in => data_in,
 								data_out => data_s
 						   	  );
 

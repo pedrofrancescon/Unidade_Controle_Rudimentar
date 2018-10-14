@@ -21,18 +21,19 @@ architecture a_pc_controle of pc_controle is
 	component pc_rom
 	port( clk: in std_logic;
 		  rst: in std_logic;
+		  jump: in std_logic;
 		  wr_en: in std_logic;
 		  data_in: in unsigned(14 downto 0); --endereço do jump
 		  data_out: out unsigned(31 downto 0) --instrucao
 	);
 	end component;
-	signal clk, rst, jump, pc_wr std_logic;
-	signal endereco unsigned(14 downto 0);
-	signal instrucao unsigned(31 downto 0);
+	signal jump, pc_wr: std_logic;
+	signal endereco: unsigned(14 downto 0);
+	signal instrucao: unsigned(31 downto 0);
 
 begin
 	control: un_controle port map(clk=>clk, rst=>rst, pc_wr_en=>pc_wr, jump_en=>jump, endereco=>endereco, instr=>instrucao);
-	countMem: pc_rom port map(clk=>clk, rst=>rst, wr_en=>pc_wr, data_in=>endereco, data_out=>instrucao);
+	countMem: pc_rom port map(clk=>clk, rst=>rst, wr_en=>pc_wr, jump => jump, data_in=>endereco, data_out=>instrucao);
 
 
 end architecture;
